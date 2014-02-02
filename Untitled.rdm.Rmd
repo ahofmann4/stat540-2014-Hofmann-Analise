@@ -37,3 +37,4 @@ Here is another scatter plot of the means of the rows:
 plot(h)
 ```
 
+
