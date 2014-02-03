@@ -210,4 +210,4 @@ stripplot(gType ~ gExp, pDat)
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
-Overall, changing the seed number changes the scatter plots entirely, and I think you need to make a new design matrix to name the gene correctly otherwise you get wt/NrlKO each time.
+Overall, changing the seed number changes the scatter plots entirely, and I think you need to make a new design matrix to name the gene correctly otherwise you get wt/NrlKO each time. How do you make another design matrix?
