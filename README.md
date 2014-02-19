@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 377d9c8e78829164590150f4030e3fc1136516b4
 Seminar 2
 ============================
 
@@ -6,6 +9,7 @@ Generating data
 ------------------
 
 This is setting up a random " rnorm" 10 x 4 matrix:
+<<<<<<< HEAD
 
 ```r
 n <- 10
@@ -88,3 +92,37 @@ plot(h)
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
 
+=======
+```{r}
+n  <- 10
+B <- 4
+x <- matrix(rnorm(n*B), nrow = n)
+x
+```
+
+
+To assign names to the rows and columns:
+```{r}
+rownames(x)  <- sprintf("obs%02d", 1:n)
+colnames(x)  <- sprintf("samp%02d", 1:B)
+x
+```
+
+To make plots you can use very easy commands: 
+
+```{r}
+colMeans(x)
+plot(colMeans(x))
+```
+
+If you use the #1 it refers to row, #2 column:
+```{r}
+h <- apply(x, 1, mean)
+```
+
+Here is another scatter plot of the means of the rows:
+```{r}
+plot(h)
+```
+
+>>>>>>> 377d9c8e78829164590150f4030e3fc1136516b4
